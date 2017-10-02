@@ -1,810 +1,607 @@
 @include('frontend._header')
 
-		<!-- PAGE CONTENT -->
-		<div id="page-content">
-
-			<div class="rev_slider_wrapper">
-                <div class="rev_slider" data-version="5.0">
-                    <ul>
-                        <li data-transition="fade" data-thumb="{{ asset('frontend/images/index/revolution-slider/bg-slide-1.jpg') }}">
-
-                            <img src="{{ asset('frontend/images/index/revolution-slider/bg-slide-1.jpg') }}" alt="">
-
-							<div class="tp-caption icons"
-								 data-x="center"
-								 data-y="center"
-								 data-voffset="-55"
-								 data-hoffset="-145"
-								 data-start="1200"
-								 data-speed="300"
-								 data-transform_in="o:0;y:-100;s:500;e:Power2.easeInOut;"
-								 data-transform_out="o:0;y:-100;s:500;e:Power2.easeInOut;">
-								 <i class="halcyon-icon-smartphone-10"></i> <br> Responsive.
-							</div>
-
-							<div class="tp-caption icons"
-								 data-x="center"
-								 data-y="center"
-								 data-voffset="-55"
-								 data-start="1250"
-								 data-speed="300"
-								 data-transform_in="o:0;y:-100;s:500;e:Power2.easeInOut;"
-								 data-transform_out="o:0;y:-100;s:500;e:Power2.easeInOut;">
-								 <i class="halcyon-icon-worldwide-1"></i> <br> Awesome.
-							</div>
-
-							<div class="tp-caption icons"
-								 data-x="center"
-								 data-y="center"
-								 data-voffset="-55"
-								 data-hoffset="125"
-								 data-start="1300"
-								 data-speed="300"
-								 data-transform_in="o:0;y:-100;s:500;e:Power2.easeInOut;"
-								 data-transform_out="o:0;y:-100;s:500;e:Power2.easeInOut;">
-								 <i class="halcyon-icon-bookmark"></i> <br> Awarded
-							</div>
-
-							<div class="tp-caption title-white"
-								 data-x="center"
-								 data-y="center"
-								 data-voffset="55"
-								 data-start="1400"
-								 data-speed="300"
-								 data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
-								 data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;">
-								 Explore a new world
-							</div>
-
-						</li>
-						<li data-transition="fade" data-thumb="{{ asset('frontend/images/index/revolution-slider/bg-slide-2.jpg') }}">
-
-                            <img src="{{ asset('frontend/images/index/revolution-slider/bg-slide-2.jpg') }}" alt="">
-
-							<div class="tp-caption rectangle"
-								 data-x="center"
-								 data-y="center"
-								 data-start="1200"
-								 data-speed="300"
-								 data-transform_in="o:0;s:500;e:Power2.easeInOut;"
-								 data-transform_out="o:0;s:500;e:Power2.easeInOut;">
-							</div>
-
-							<div class="tp-caption special-text"
-								 data-x="center"
-								 data-y="center"
-								 data-voffset="-40"
-								 data-start="1250"
-								 data-speed="300"
-								 data-transform_in="o:0;y:-50;s:500;e:Power2.easeInOut;"
-								 data-transform_out="o:0;s:500;e:Power2.easeInOut;">
-								 We love it
-							</div>
-
-							<div class="tp-caption title-white text-uppercase"
-								 data-x="center"
-								 data-y="center"
-								 data-voffset="40"
-								 data-start="1250"
-								 data-speed="300"
-								 data-transform_in="o:0;y:50;s:500;e:Power2.easeInOut;"
-								 data-transform_out="o:0;s:500;e:Power2.easeInOut;">
-								 <strong>Top services 4u</strong>
-							</div>
-
-						</li>
-						<li data-transition="fade" data-thumb="{{ asset('frontend/images/index/revolution-slider/bg-slide-3.jpg') }}">
-
-                            <img src="{{ asset('frontend/images/index/revolution-slider/bg-slide-3.jpg') }}" alt="">
-
-							<div class="tp-caption square"
-								 data-x="0"
-								 data-y="center"
-								 data-start="1200"
-								 data-speed="300"
-								 data-transform_in="o:0;x:-50;s:500;e:Power2.easeInOut;"
-								 data-transform_out="o:0;x:-50;s:500;e:Power2.easeInOut;">
-							</div>
-
-							<div class="tp-caption rectangle-white"
-								 data-x="170"
-								 data-y="center"
-								 data-start="1200"
-								 data-speed="300"
-								 data-transform_in="o:0;x:150;s:500;e:Power2.easeInOut;"
-								 data-transform_out="o:0;x:150;s:500;e:Power2.easeInOut;">
-							</div>
-
-							<div class="tp-caption subtitle-big text-uppercase"
-								 data-x="220"
-								 data-y="center"
-								 data-voffset="-15"
-								 data-start="1200"
-								 data-speed="300"
-								 data-transform_in="o:0;x:150;s:500;e:Power2.easeInOut;"
-								 data-transform_out="o:0;x:150;s:500;e:Power2.easeInOut;">
-								 All you need is Halcyon
-							</div>
-
-							<div class="tp-caption text-small"
-								 data-x="220"
-								 data-y="center"
-								 data-voffset="25"
-								 data-start="1200"
-								 data-speed="300"
-								 data-transform_in="o:0;x:150;s:500;e:Power2.easeInOut;"
-								 data-transform_out="o:0;x:150;s:500;e:Power2.easeInOut;">
-								 Simple, Modern, 30 Homepages, Clean coded and so many features
-							</div>
+<!-- PAGE CONTENT -->
+<div id="page-content">
+
+    @include('frontend._slider')
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <div class="headline text-center">
+
+                    <h2>Умный дом и системы автоматизации от БМС Трейдинг</h2>
+
+                </div><!-- headline -->
+
+            </div><!-- col -->
+        </div><!-- row -->
+    </div><!-- container -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Мы занимаемся оптовыми и розничными поставками уникального для российского рынка высокотехнологичного
+                    оборудования, которое позволяет максимально упростить управление зданием любого уровня – от
+                    небольшого частного дома до многоэтажного отеля.</p>
+                <ul>
+                    <li>Хотите, чтобы температура и влажность воздуха в каждом помещении дома соответствовали вашим
+                        предпочтениям круглый год? Чтобы свет в доме автоматически зажигался там, где это необходимо, в
+                        любое время дня и ночи?
+                    </li>
+                    <li>Надоело переплачивать за электричество и коммунальные услуги? Мечтаете жить в современном,
+                        по-настоящему умном доме, который заботится о вашем комфорте и уюте, поддерживая все системы в
+                        оптимальном состоянии?
+                    </li>
+                    <li>Желаете обезопасить своих близких и защитить имущество, минимизировать ущерб от аварийных
+                        ситуаций? Необходим удалённый контроль над всеми процессами, происходящими в вашей квартире?
+                    </li>
+                </ul>
+                <p>Решить эти и многие другие проблемы помогут компоненты системы «умный дом», купить которые можно на
+                    сайте нашей компании. Мы предоставим вам исчерпывающую информацию по вопросам, касающимся
+                    комплексной автоматизации всех систем здания. Опытные специалисты подготовят проект и подберут
+                    оборудование для жилого дома, офиса, отеля, общественного учреждения или промышленного
+                    предприятия. </p>
+                <p>Сотрудники нашей компании – высококвалифицированные инженеры-проектировщики – разрабатывают
+                    интеллектуальный дом с учётом предпочтений клиента. Впрочем, правильно спроектированное умное жильё
+                    очень быстро подстраивается под желания и предпочтения хозяев. Вам остаётся вносить незначительные
+                    корректировки, управляя всеми функциями и сценариями при помощи эргономичных сенсорных панелей,
+                    компьютера или собственного мобильника. </p>
+                <p>Оборудование для мониторинга температуры, влажности и даже состава воздуха, погодные станции, датчики
+                    дыма, сенсоры и прочие устройства объединяются в общую систему, функционирующую, как единый
+                    организм. BMS Traiding – официальный дистрибьютор всемирно известной корпорации HDL и других ведущих
+                    производителей компонентов умного дома. Мы гарантируем не только высокое качество, надёжность и
+                    долговечность системы, но и чрезвычайно привлекательные по меркам отечественного рынка цены на
+                    оборудование для умного дома. </p>
+                <p>Решения для бизенса. Умный дом может стать незаменимым помощником как в быту, так и в бизнесе. Мы
+                    разрабатываем проекты автоматизации систем безопасности, вентиляции, кондиционирования и отопления
+                    для коммерческих предприятий, поставляем оборудование, осуществляем техподдержку. Интеллектуальная
+                    система управления домом отлично зарекомендовала себя в гостиничном бизнесе: она помогает
+                    оптимизировать внутреннюю инфраструктуру, повысить комфортабельность и существенно снизить
+                    расходы. </p>
+                <p>БМС Трейдинг – это проектирование уникальных беспроводных решений, высокотехнологичных инженерных
+                    систем, комплексных схем контроля и оповещения. Кроме того, наша компания поставляет
+                    высококачественные энергосберегающие LED-светильники – также, по сути, являющиеся «умными и
+                    экономными» составляющими вашего дома или офиса. Важным направлением деятельности BMS Traiding на
+                    протяжении последних лет является поставка систем для управления сценическим светом. Новейшее
+                    оборудование – многоканальные диммерные стойки, релейные модули и пр. – помогает устраивать
+                    фееричные представления при минимуме затрат. </p>
+                <p>BMS Traiding – это умная автоматизация, «девайсы из будущего», доступные уже сегодня. Наши клиенты
+                    получают доступ к современному программному обеспечению и возможность приобрести самые интересные
+                    новинки рынка smart home. Звоните (<a class="phone" href="tel:+74956468206" target="_blank">+7 (495)
+                        646-82-06</a>), мы поможем сделать вашу жизнь удобнее, приятнее и экономичнее! </p></div>
 
-						</li>
-					</ul>
-				</div><!-- rev_slider_wrapper -->
-			</div><!-- rev_slider -->
-
-			<div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
+        </div><!-- col -->
+    </div><!-- row -->
+</div><!-- container -->
 
-                        <div class="headline text-center">
+<section class="full-section dark-section parallax" id="section-6" data-stellar-background-ratio="0.1">
 
-							<h2>How do we play?</h2>
-							<p>A unique layout composed of 30 different homepages</p>
+    <div class="full-section-overlay-color"></div>
 
-						</div><!-- headline -->
+    <div class="full-section-container">
 
-                    </div><!-- col -->
-                </div><!-- row -->
-            </div><!-- container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
 
-			<div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
+                    <p class="text-center"><img src="{{ asset('frontend/assets/images/logo.png') }}" alt=""></p>
+                    <p class="text-center"><em>Let you business speak for itself with this theme</em></p>
 
-						<div class="tabs style-2">
+                </div><!-- col -->
+            </div><!-- row -->
+        </div><!-- container -->
 
-                            <ul class="nav nav-tabs text-center">
-                                <li class="active"><a class="waves" href="#tab-1-1" data-toggle="tab">01.Research</a></li>
-                                <li><a class="waves" href="#tab-1-2" data-toggle="tab">02.Contact us</a></li>
-                                <li><a class="waves" href="#tab-1-3" data-toggle="tab">03.Purchase</a></li>
-                            </ul>
+    </div><!-- full-section-container -->
+</section><!-- full-section -->
 
-                            <div class="tab-content">
-                                <div class="tab-pane fade in active" id="tab-1-1">
+<div class="hr"></div>
 
-                                    <div class="row">
-										<div class="col-sm-6">
+<div class="container">
+    <div class="row">
+        <div class="headline text-center">
+            <h2>Плюсы работы с нами</h2>
+        </div>
+        <div class="col-sm-4">
 
-											<br class="hidden-sm hidden-xs">
+            <div class="service-box style-11 wow fadeInUp">
 
-											<h2>Easy to customize &amp; <br> a pleasure to work with</h2>
+                <i class="halcyon-icon-network"></i>
 
-											<h5 class="text-default-color-1"><strong>All you need is Halcyon , modern and simple. Equipted with all the elements you need.</strong></h5>
+                <div class="service-box-content">
 
-											<br>
+                    <h6><a href="single-service.html">Media support</a></h6>
 
-											<p>Aenean luctus mi mollis quam feugiat consequat eu sed eros. Cras suscipit eu
-											est sed imperdiet. Curabitur ultrices dolor magna, at vene natis lacus rutrum
-											nec. Quisque elit velit, lacinia sit amet tellus at, auctor suscipit metus. Duis
-											congue nibh at tortor ornare, sed commo do ipsum mattis. Phasellus lacinia sed
-											purus eget rhoncus. Mauris ut tortor efficitur, vestibulum magna nec, rhoncus
-											neque.</p>
+                    <p>Доступная цена на все виды услуг, работ и на всё оборудование</p>
 
-										</div><!-- col -->
-										<div class="col-sm-6">
+                </div><!-- service-box-content -->
 
-											<img src="{{ asset('frontend/images/index/tabs/image-1.png') }}" alt="">
+            </div><!-- service-box -->
 
-											<div class="discount">
-												<small>Up to</small>
-												75%
-												<small class="text-right">better</small>
-											</div>
+        </div><!-- col -->
+        <div class="col-sm-4">
 
-										</div><!-- col -->
-									</div><!-- row -->
+            <div class="service-box style-11 wow fadeInUp" data-wow-delay="0.1s">
 
-                                </div><!-- tab-pane -->
-                                <div class="tab-pane fade" id="tab-1-2">
+                <i class="halcyon-icon-smartphone-10"></i>
 
-                                    <div class="row">
-										<div class="col-sm-6">
+                <div class="service-box-content">
 
-											<br class="hidden-sm hidden-xs">
+                    <h6><a href="single-service.html">Responsive</a></h6>
 
-											<h2>Donec sit amet gravida quam. Aliquam erat sem</h2>
+                    <p>Профессиональное консультирование по всем вопросам автоматизации</p>
 
-											<h5 class="text-default-color-1"><strong>Aenean luctus mi mollis quam feugiat consequat eu sed eros. Cras suscipit eu est sed.</strong></h5>
+                </div><!-- service-box-content -->
 
-											<br>
+            </div><!-- service-box -->
 
-											<p>Proin diam nisi, auctor sed volutpat eu, placerat eu sem. Ut interdum neque
-											pulvinar volutpat sollicitudin. Vivamus egestas, velit quis dignissim
-											scelerisque, lorem odio efficitur felis, eget luctus ligula nisl sit amet leo.
-											Donec sit amet gravida quam. Aliquam erat sem, euismod at magna quis, aliquet
-											egestas urna. Vivamus consequat lacus feugiat arcu finibus, vel iaculis enim
-											consectetur.</p>
+        </div><!-- col -->
+        <div class="col-sm-4">
 
-										</div><!-- col -->
-										<div class="col-sm-6">
+            <div class="service-box style-11 wow fadeInUp" data-wow-delay="0.2s">
 
-											<img src="{{ asset('frontend/images/index/tabs/image-2.png') }}" alt="">
+                <i class="halcyon-icon-notebook-4"></i>
 
-											<div class="discount">
-												<small>Up to</small>
-												55%
-												<small class="text-right">better</small>
-											</div>
+                <div class="service-box-content">
 
-										</div><!-- col -->
-									</div><!-- row -->
+                    <h6><a href="single-service.html">Well documented</a></h6>
 
-                                </div><!-- tab-pane -->
-                                <div class="tab-pane fade" id="tab-1-3">
+                    <p>Короткие сроки проектирования и внедрения</p>
 
-                                    <div class="row">
-										<div class="col-sm-6">
+                </div><!-- service-box-content -->
 
-											<br class="hidden-sm hidden-xs">
+            </div><!-- service-box -->
 
-											<h2>Morbi suscipit rhoncus nulla sit amet duis</h2>
+        </div><!-- col -->
+    </div><!-- row -->
+</div><!-- container -->
 
-											<h5 class="text-default-color-1"><strong>Donec sit amet gravida quam. Aliquam
-											erat sem, euismod at magna quis, aliquet dolor sit amet.</strong></h5>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
 
-											<br>
+            <div class="service-box style-11 wow fadeInUp">
 
-											<p>Etiam commodo vel arcu eu commodo. Mauris ultricies sem id lacinia interdum.
-											Morbi suscipit rhoncus nulla, sit amet placerat purus. Suspendisse commodo eros
-											mauris, accumsan ultricies nisl sodales sed. Sed sed pharetra elit, eu interdum
-											eros. Phasellus felis nisl, consectetur eu vestibulum non, iaculis id tellus.
-											Donec suscipit, nisl ac semper tristique, est mi suscipit purus, at posuere velit
-											turpis.</p>
+                <i class="halcyon-icon-file"></i>
 
-										</div><!-- col -->
-										<div class="col-sm-6">
+                <div class="service-box-content">
 
-											<img src="{{ asset('frontend/images/index/tabs/image-3.png') }}" alt="">
+                    <h6><a href="single-service.html">Clean coded</a></h6>
 
-											<div class="discount">
-												<small>Up to</small>
-												60%
-												<small class="text-right">better</small>
-											</div>
+                    <p>Команда профессионалов с более чем 10 летним богатым опытом</p>
 
-										</div><!-- col -->
-									</div><!-- row -->
+                </div><!-- service-box-content -->
 
-                                </div><!-- tab-pane -->
-                            </div><!-- tab-content -->
+            </div><!-- service-box -->
 
-                        </div><!-- tabs -->
+        </div><!-- col -->
+        <div class="col-sm-4">
 
-                    </div><!-- col -->
-                </div><!-- row -->
-            </div><!-- container -->
+            <div class="service-box style-11 wow fadeInUp" data-wow-delay="0.1s">
 
-			<section class="full-section dark-section parallax" id="section-6" data-stellar-background-ratio="0.1">
+                <i class="halcyon-icon-controls-4"></i>
 
-				<div class="full-section-overlay-color"></div>
+                <div class="service-box-content">
 
-				<div class="full-section-container">
+                    <h6><a href="single-service.html">Color schemes</a></h6>
 
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-12">
+                    <p>Простое масштабирование внедрённых систем</p>
 
-								<p class="text-center"><img src="{{ asset('frontend/assets/images/logo.png') }}" alt=""></p>
-								<p class="text-center"><em>Let you business speak for itself with this theme</em></p>
+                </div><!-- service-box-content -->
 
-							</div><!-- col -->
-						</div><!-- row -->
-					</div><!-- container -->
+            </div><!-- service-box -->
 
-				</div><!-- full-section-container -->
-			</section><!-- full-section -->
+        </div><!-- col -->
+        <div class="col-sm-4">
 
-			<div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
+            <div class="service-box style-11 wow fadeInUp" data-wow-delay="0.2s">
 
-                        <div class="service-box style-8 wow fadeIn" data-wow-duration="1s">
+                <i class="halcyon-icon-spotlight"></i>
 
-							<img src="{{ asset('frontend/images/services/image-1.jpg') }}" alt="">
-							<i class="halcyon-icon-diamond"></i>
+                <div class="service-box-content">
 
-							<div class="service-box-content">
+                    <h6><a href="single-service.html">Modern design</a></h6>
 
-								<h6><a href="single-service.html">Powerful design</a></h6>
+                    <p>Наличие оборудования на складе, быстрые поставки</p>
 
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae dui interdum,
-								rhoncus velit.</p>
+                </div><!-- service-box-content -->
 
-								<a href="single-service.html">Read more</a>
+            </div><!-- service-box -->
 
-							</div><!-- service-box-content -->
+        </div><!-- col -->
+    </div><!-- row -->
+</div><!-- container -->
 
-						</div><!-- service-box -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
 
-                    </div><!-- col -->
-					<div class="col-sm-4">
+            <div class="service-box style-11 wow fadeInUp">
 
-                        <div class="service-box style-8 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="1s">
+                <i class="halcyon-icon-settings-4"></i>
 
-							<img src="{{ asset('frontend/images/services/image-2.jpg') }}" alt="">
-							<i class="halcyon-icon-network"></i>
+                <div class="service-box-content">
 
-							<div class="service-box-content">
+                    <h6><a href="single-service.html">Support included</a></h6>
 
-								<h6><a href="single-service.html">Media support</a></h6>
+                    <p>Гарантийное и послегарантийное обслуживание</p>
 
-								<p>Cras ultrices tempus leo, quis luctus neque tristique aliquam. Nulla id porta nisl. Nunc
-								ut commodo nulla.</p>
+                </div><!-- service-box-content -->
 
-								<a href="single-service.html">Read more</a>
+            </div><!-- service-box -->
 
-							</div><!-- service-box-content -->
+        </div><!-- col -->
+        <div class="col-sm-4">
 
-						</div><!-- service-box -->
+            <div class="service-box style-11 wow fadeInUp" data-wow-delay="0.1s">
 
-                    </div><!-- col -->
-					<div class="col-sm-4">
+                <i class="halcyon-icon-bookmark-1"></i>
 
-                        <div class="service-box style-8 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="1s">
+                <div class="service-box-content">
 
-							<img src="{{ asset('frontend/images/services/image-3.jpg') }}" alt="">
-							<i class="halcyon-icon-folder-6"></i>
+                    <h6><a href="single-service.html">Blog pages</a></h6>
 
-							<div class="service-box-content">
+                    <p>Обучение внедрению и настройке систем автоматизации</p>
 
-								<h6><a href="single-service.html">Well documented files</a></h6>
+                </div><!-- service-box-content -->
 
-								<p>Fusce sit amet luctus erat. In elementum faucibus porttitor. Vivamus et ultrices ligula, a
-								ultricies quam.</p>
+            </div><!-- service-box -->
 
-								<a href="single-service.html">Read more</a>
+        </div><!-- col -->
+    </div><!-- row -->
+</div><!-- container -->
 
-							</div><!-- service-box-content -->
+<section class="full-section dark-section parallax no-margin-bottom" id="section-1" data-stellar-background-ratio="0.1">
+    <div class="full-section-container">
 
-						</div><!-- service-box -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
 
-                    </div><!-- col -->
-				</div><!-- row -->
-			</div><!-- container -->
+                    <h3 class="testimonial-title">МЫ ВАМ НУЖНЫ! ЕСЛИ -</h3>
 
-			<br><br>
+                </div><!-- col -->
+            </div><!-- row -->
+        </div><!-- container -->
 
-			<div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
 
-						<h2 class="text-center">After 4 years of constant research we came up with <br class="visible-lg-block"> Core. A new Experience.</h2>
+                    <div class="testimonial">
+                        <h5><i><strong>
 
-						<br>
+                                </strong></i></h5>
+                        {{--<blockquote>--}}
+                        {{--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis dolor. Cras--}}
+                        {{--placerat lectus a posuere aliquet. Curabitur quis vehicula odio.</p>--}}
+                        {{--</blockquote>--}}
 
-						<p class="text-center">
-							<a class="btn btn-default-1 waves" href="#">Purchase Item <i class="fa fa-angle-right"></i></a>
-						</p>
+                        {{--<h5>John Turner, <span>wp maniac</span></h5>--}}
 
-						<p class="text-center">designed by <strong>milothemes.</strong> <br> Sold exclusivley on Envato Marketplace</p>
+                    </div><!-- testimonial -->
 
-					</div><!-- col -->
-				</div><!-- row -->
-			</div><!-- container -->
+                </div><!-- col -->
+            </div><!-- row -->
+        </div><!-- container -->
 
-			<div class="hr"></div>
+    </div><!-- full-section-container -->
+</section><!-- full-section -->
 
-			<br>
+<section class="full-section half-image" id="section-7">
 
-			<div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
+    <div class="half-image-left wow fadeInLeft"
+         style="background-image:url({{ asset('frontend/images/index/image-3.png') }});">
 
-                        <div class="service-box style-11 wow fadeInUp">
+        <img src="{{ asset('frontend/images/index/image-3.png') }}" alt="">
 
-							<i class="halcyon-icon-network"></i>
+    </div><!-- half-image-left -->
 
-							<div class="service-box-content">
+    <div class="full-section-container">
 
-								<h6><a href="single-service.html">Media support</a></h6>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-offset-7 col-md-4">
 
-								<p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Pellentesque vitae dui interdum,
-								rhoncus velit.</p>
+                    <h2>МЫ ВАМ НУЖНЫ! ЕСЛИ -</h2>
+                    <br>
+                    <strong>
+                        <ul>
+                            <li>вы только приобрели недвижимость или задумали ремонт своей квартиры или дома;</li>
+                            <li>хотите жить в современном технологичном доме с максимальным комфортом;</li>
+                            <li>вам надоело вручную регулировать кондиционер, тёплый пол, включать и выключать свет;
+                            </li>
+                            <li>вы хотите знать всю информацию о вашем доме независимо от того как далеко вы от него;
+                            </li>
+                            <li>вам важна безопазность близких людей и вашего имущества;</li>
+                            <li>у вас нет времени самостоятельно заниматься подбором вариантов умного дома, но вам нужно
+                                оптимальное решение под ваш бюджет;
+                            </li>
+                            <li>вы инсталятор или интегратор систем автоматизации и вам нужен надёжный партнёр;</li>
+                            <li>вы доверяете официальным дистрибьюторам с большим опытом работы и длительным сроком
+                                работы на рынке автоматизации.
+                            </li>
+                        </ul>
+                    </strong>
 
-							</div><!-- service-box-content -->
+                </div><!-- col -->
+            </div><!-- row -->
+        </div><!-- container-fluid -->
 
-						</div><!-- service-box -->
+    </div><!-- full-section-container -->
+</section><!-- full-section -->
 
-                    </div><!-- col -->
-					<div class="col-sm-4">
+<section class="full-section dark-section parallax" id="section-5" data-stellar-background-ratio="0.1">
+    <div class="full-section-container">
 
-                        <div class="service-box style-11 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
 
-							<i class="halcyon-icon-smartphone-10"></i>
+                    <h3 class="text-center">Интересуетесь? </h3>
+                    <h5 class="text-center">Оставьте заявку на звонок! </h5>
 
-							<div class="service-box-content">
+                </div><!-- col -->
+            </div><!-- row -->
+        </div><!-- container -->
 
-								<h6><a href="single-service.html">Responsive</a></h6>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
 
-								<p>Suspendisse dapibus malesuada lectus, a aliquet odio semper non. Pellentesque in accumsan
-								dolor sit amet.</p>
+                    <div class="widget widget-newsletter">
 
-							</div><!-- service-box-content -->
+                        <form name="newsletter" novalidate method="post" action="#">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-sm-4">
 
-						</div><!-- service-box -->
+                                        <input type="text" name="name" placeholder="Имя">
 
-                    </div><!-- col -->
-					<div class="col-sm-4">
+                                    </div><!-- col -->
+                                    <div class="col-sm-5">
 
-                        <div class="service-box style-11 wow fadeInUp" data-wow-delay="0.2s">
+                                        <input type="text" name="phone" placeholder="Телефон">
 
-							<i class="halcyon-icon-notebook-4"></i>
+                                    </div><!-- col -->
+                                    <div class="col-sm-3">
 
-							<div class="service-box-content">
+                                        <button class="btn btn-default-1 waves" type="submit" name="submit" value="">
+                                            Отправить <i class="fa fa-angle-right"></i></button>
 
-								<h6><a href="single-service.html">Well documented</a></h6>
+                                    </div><!-- col -->
+                                </div><!-- row -->
+                            </fieldset>
+                        </form>
 
-								<p>Maecenas tempor massa et laoreet malesuada. Pellentesque sit amet elementum leo fuis unde
-								dolor amet omis.</p>
+                    </div><!-- widget-newsletter -->
 
-							</div><!-- service-box-content -->
+                </div><!-- col -->
+            </div><!-- row -->
+        </div><!-- container -->
 
-						</div><!-- service-box -->
+    </div><!-- full-section-container -->
+</section><!-- full-section -->
 
-                    </div><!-- col -->
-				</div><!-- row -->
-			</div><!-- container -->
+<br><br><br>
 
-			<div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
 
-                        <div class="service-box style-11 wow fadeInUp">
+            <div class="headline text-center">
+                <h2>Преимущества и возможности умного дома</h2>
+            </div><!-- headline -->
 
-							<i class="halcyon-icon-file"></i>
+        </div><!-- col -->
+    </div><!-- row -->
+</div><!-- container -->
 
-							<div class="service-box-content">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+                <div class="panel-group style-2" id="accordion2">
+                    <div class="panel">
+                        <div class="panel-heading">
 
-								<h6><a href="single-service.html">Clean coded</a></h6>
+                            <h6 class="panel-title">
+                                <a class="waves collapsed" data-toggle="collapse" data-parent="#accordion2"
+                                   href="#collapse1-2" aria-expanded="false">УДАЛЁННОЕ УПРАВЛЕНИЕ ВСЕМИ ФУНКЦИЯМИ ДОМА</a>
+                            </h6>
 
-								<p>Pellentesque euismod ligula sit amet purus iaculis, in elementum tortor mollis. Aliquam id
-								facilisis metus.</p>
+                        </div><!-- panel-heading -->
+                        <div id="collapse1-2" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="panel-body">
 
-							</div><!-- service-box-content -->
+                                <p>
+                                    Умные технологии позволяют удалённо – практически из любой точки мира – управлять микроклиматом в доме, получать данные со всех объединённых в общую инженерную систему устройств. При помощи смартфона или компьютера, подключённого к интернету, можно ещё по дороге домой проветрить квартиру, наполнить ванну и многое другое.
+                                </p>
 
-						</div><!-- service-box -->
+                            </div><!-- panel-body -->
+                        </div><!-- panel-collapse -->
+                    </div><!-- panel -->
 
-                    </div><!-- col -->
-					<div class="col-sm-4">
+                    <div class="panel">
+                        <div class="panel-heading">
 
-                        <div class="service-box style-11 wow fadeInUp" data-wow-delay="0.1s">
+                            <h6 class="panel-title">
+                                <a class="waves collapsed" data-toggle="collapse" data-parent="#accordion2"
+                                   href="#collapse2-2" aria-expanded="false">БЕЗОПАСНОСТЬ, ВИДЕОНАБЛЮДЕНИЕ, ДОМОФОНИЯ</a>
+                            </h6>
 
-							<i class="halcyon-icon-controls-4"></i>
+                        </div><!-- panel-heading -->
+                        <div id="collapse2-2" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="panel-body">
 
-							<div class="service-box-content">
+                                <p>
+                                    Повысьте уровень безопасности вашей семьи, защитите своё имущество. Система незамедлительно посылает на ваш смартфон информацию с камер видеонаблюдения и домофона, сигналы датчиков открытия дверей и окон. А когда вы уезжаете в отпуск или командировку, умный сценарий вводит в заблуждение злоумышленников, имитируя присутствие жильцов.
+                                </p>
 
-								<h6><a href="single-service.html">Color schemes</a></h6>
+                            </div><!-- panel-body -->
+                        </div><!-- panel-collapse -->
+                    </div><!-- panel -->
 
-								<p>Nam aliquam iaculis tristique. In scelerisque pretium quam pretium tempus. Vivamus
-								blandit, quis lobortis.</p>
+                    <div class="panel">
+                        <div class="panel-heading">
 
-							</div><!-- service-box-content -->
+                            <h6 class="panel-title">
+                                <a class="waves collapsed" data-toggle="collapse" data-parent="#accordion2"
+                                   href="#collapse3-2" aria-expanded="false">АВТОМАТИЗАЦИЯ КОНДИЦИОНИРОВАНИЯ, ВЕНТИЛЯЦИИ И ОТОПЛЕНИЯ</a>
+                            </h6>
 
-						</div><!-- service-box -->
+                        </div><!-- panel-heading -->
+                        <div id="collapse3-2" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="panel-body">
 
-                    </div><!-- col -->
-					<div class="col-sm-4">
+                                <p>
+                                    Умное тепло зимой, рациональное охлаждение летом. Полная автоматизация системы делает работу кондиционирования, отопления и вентиляции в вашем доме максимально согласованной. Стандартные сценарии позаботятся о вашем круглосуточном уюте – комнаты перед вашим пробуждением или проветрят спальню перед сном.
+                                </p>
 
-                        <div class="service-box style-11 wow fadeInUp" data-wow-delay="0.2s">
+                            </div><!-- panel-body -->
+                        </div><!-- panel-collapse -->
+                    </div><!-- panel -->
 
-							<i class="halcyon-icon-spotlight"></i>
+                    <div class="panel">
+                        <div class="panel-heading">
 
-							<div class="service-box-content">
+                            <h6 class="panel-title">
+                                <a class="waves collapsed" data-toggle="collapse" data-parent="#accordion2"
+                                   href="#collapse4-2" aria-expanded="false">СНИЖЕНИЕ ЭНЕРГОЗАТРАТ</a>
+                            </h6>
 
-								<h6><a href="single-service.html">Modern design</a></h6>
+                        </div><!-- panel-heading -->
+                        <div id="collapse4-2" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="panel-body">
 
-								<p>Sed ultricies a sem sed porta. In nec quam eu purus lacinia dapibus. Mauris egestas
-								tincidunt nisl id finibus.</p>
+                                <p>
+                                    «Умный дом» повышает качество жизни, делает её комфортнее и проще, одновременно снижая ваши расходы. Удивительно – однако с фактами не поспоришь: после инсталляции системы отмечается снижение энергозатрат на 30-40%. Пустая квартира отапливается по минимуму, свет не горит там, где он не нужен, всё оборудование работает на оптимальной мощности.
+                                </p>
 
-							</div><!-- service-box-content -->
+                            </div><!-- panel-body -->
+                        </div><!-- panel-collapse -->
+                    </div><!-- panel -->
 
-						</div><!-- service-box -->
+                    <div class="panel">
+                        <div class="panel-heading">
 
-                    </div><!-- col -->
-				</div><!-- row -->
-			</div><!-- container -->
+                            <h6 class="panel-title">
+                                <a class="waves collapsed" data-toggle="collapse" data-parent="#accordion2"
+                                   href="#collapse5-2" aria-expanded="false">АВТОМАТИЗАЦИЯ ОСВЕЩЕНИЯ, УМНЫЙ СВЕТ</a>
+                            </h6>
 
-			<div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
+                        </div><!-- panel-heading -->
+                        <div id="collapse5-2" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="panel-body">
 
-                        <div class="service-box style-11 wow fadeInUp">
+                                <p>
+                                    Интеллектуальному дому можно поручить управление источниками света – не только включением-выключением, но и яркостью, цветом, количеством светильников. Автоматизация освещения создаёт оптимальные условия для работы или отдыха в соответствии с днём недели и временем суток. Заданные сценарии включаются по расписанию, при возможности система старается максимально использовать естественное освещение, экономя электроэнергию.
+                                </p>
 
-							<i class="halcyon-icon-settings-4"></i>
+                            </div><!-- panel-body -->
+                        </div><!-- panel-collapse -->
+                    </div><!-- panel -->
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="panel-group style-2" id="accordion2">
+                    <div class="panel">
+                        <div class="panel-heading">
 
-							<div class="service-box-content">
+                            <h6 class="panel-title">
+                                <a class="waves collapsed" data-toggle="collapse" data-parent="#accordion2"
+                                   href="#collapse6-2" aria-expanded="false">МУЛЬТИРУМ, ФОНОВОЕ АУДИО</a>
+                            </h6>
 
-								<h6><a href="single-service.html">Support included</a></h6>
+                        </div><!-- panel-heading -->
+                        <div id="collapse6-2" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="panel-body">
 
-								<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin velit massa, venenatis
-								quis tincidunt eu.</p>
+                                <p>
+                                    Звук и видео в любой точке вашего дома регулируются при помощи интуитивно понятного управления. Вся мультимедийная библиотека хранится на центральном сервере – а вы слушаете музыку, смотрите любимые фильмы и телепрограммы в спальне, на кухне или в персональном домашнем кинотеатре. Мультирум контролирует не только изображение и звук, но и создаёт комфортные условия для просмотра, управляя светильниками, шторами и даже температурой в комнате.
+                                </p>
 
-							</div><!-- service-box-content -->
+                            </div><!-- panel-body -->
+                        </div><!-- panel-collapse -->
+                    </div><!-- panel -->
 
-						</div><!-- service-box -->
+                    <div class="panel">
+                        <div class="panel-heading">
 
-                    </div><!-- col -->
-					<div class="col-sm-4">
+                            <h6 class="panel-title">
+                                <a class="waves collapsed" data-toggle="collapse" data-parent="#accordion2"
+                                   href="#collapse7-2" aria-expanded="false">ОХРАННО-ПОЖАРНАЯ СИГНАЛИЗАЦИЯ</a>
+                            </h6>
 
-                        <div class="service-box style-11 wow fadeInUp" data-wow-delay="0.1s">
+                        </div><!-- panel-heading -->
+                        <div id="collapse7-2" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="panel-body">
 
-							<i class="halcyon-icon-bookmark-1"></i>
+                                <p>
+                                    Важная составляющая инженерных систем smart home – датчики проникновения, дыма и СО. Пожар не застанет ваш дом врасплох: сигнал о возгорании или взломе квартиры моментально поступает на пульт охранной или пожарной службы. И, разумеется, на ваше персональное мобильное устройство – где бы вы не находились: согласитесь, гораздо проще принять верное решение после просмотра данных с камер наблюдения.
+                                </p>
 
-							<div class="service-box-content">
+                            </div><!-- panel-body -->
+                        </div><!-- panel-collapse -->
+                    </div><!-- panel -->
 
-								<h6><a href="single-service.html">Blog pages</a></h6>
+                    <div class="panel">
+                        <div class="panel-heading">
 
-								<p>Vivamus pharetra neque ac finibus convallis. Maecenas rutrum lectus nulla, iaculis maximus
-								purus efficitur sit amet.</p>
+                            <h6 class="panel-title">
+                                <a class="waves collapsed" data-toggle="collapse" data-parent="#accordion2"
+                                   href="#collapse8-2" aria-expanded="false">ЗАЩИТА ОТ ПРОТЕЧЕК</a>
+                            </h6>
 
-							</div><!-- service-box-content -->
+                        </div><!-- panel-heading -->
+                        <div id="collapse8-2" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="panel-body">
 
-						</div><!-- service-box -->
+                                <p>
+                                    Вовремя перекрытый аварийный водопровод – это экономия на ремонте как минимум своей, а то и соседской квартиры. В вашем обновлённом доме вам не придётся опасаться протечек: защитой от последствий подобных аварий служат подключённые к общей системе датчики. Если вдруг прорвало трубу – вода попадает на расположенный на полу сенсор. Система не только оповещает владельца по телефону, но и перекрывает воду, сводя ущерб к минимуму.
+                                </p>
 
-                    </div><!-- col -->
-					<div class="col-sm-4">
+                            </div><!-- panel-body -->
+                        </div><!-- panel-collapse -->
+                    </div><!-- panel -->
 
-                        <div class="service-box style-11 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="panel">
+                        <div class="panel-heading">
 
-							<i class="halcyon-icon-folder-4"></i>
+                            <h6 class="panel-title">
+                                <a class="waves collapsed" data-toggle="collapse" data-parent="#accordion2"
+                                   href="#collapse9-2" aria-expanded="false">УПРАВЛЕНИЕ ШТОРАМИ, ЖАЛЮЗИ, ВОРОТАМИ И ПР.</a>
+                            </h6>
 
-							<div class="service-box-content">
+                        </div><!-- panel-heading -->
+                        <div id="collapse9-2" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="panel-body">
 
-								<h6><a href="single-service.html">Contact form</a></h6>
+                                <p>
+                                    Зачем включать кондиционер, если можно просто проветрить комнату? Тем более, что в smart home оба действия осуществляются при помощи централизованной системы управления. Электрические приводы, подключённые к инженерной системе, подымают и опускают жалюзи, раздвигают и задвигают шторы. Не нужно выходить из машины, чтобы открыть ворота или заехать в гараж: все команды задаются с вашего смартфона.
+                                </p>
 
-								<p>Donec pretium aliquet velit, ut suscipit mauris consequat in. Pellentesque posuere maximus
-								lorem ac luctus.</p>
+                            </div><!-- panel-body -->
+                        </div><!-- panel-collapse -->
+                    </div><!-- panel -->
 
-							</div><!-- service-box-content -->
 
-						</div><!-- service-box -->
+                </div><!-- accordion -->
+            </div>
 
-                    </div><!-- col -->
-				</div><!-- row -->
-			</div><!-- container -->
+        </div><!-- col -->
+    </div><!-- row -->
+</div>
 
-			<section class="full-section dark-section parallax no-margin-bottom" id="section-1" data-stellar-background-ratio="0.1">
-				<div class="full-section-container">
+</div><!-- PAGE CONTENT -->
 
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-12 text-center">
+<!-- SCROLL UP -->
+<a id="scroll-up" class="waves"><i class="fa fa-angle-up"></i></a>
 
-								<h6 class="testimonial-title">Happy Clients</h6>
 
-							</div><!-- col -->
-						</div><!-- row -->
-					</div><!-- container -->
+<!-- THEME OPTIONS -->
+<div id="theme-options"></div>
 
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-12">
 
-								<div class="testimonial">
-
-									<blockquote>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis dolor. Cras
-										placerat lectus a posuere aliquet. Curabitur quis vehicula odio.</p>
-									</blockquote>
-
-									<h5>John Turner, <span>wp maniac</span></h5>
-
-								</div><!-- testimonial -->
-
-							</div><!-- col -->
-						</div><!-- row -->
-					</div><!-- container -->
-
-				</div><!-- full-section-container -->
-			</section><!-- full-section -->
-
-			<section class="full-section half-image" id="section-7">
-
-				<div class="half-image-left wow fadeInLeft" style="background-image:url({{ asset('frontend/images/index/image-3.png') }});">
-
-					<img src="{{ asset('frontend/images/index/image-3.png') }}" alt="">
-
-				</div><!-- half-image-left -->
-
-				<div class="full-section-container">
-
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-md-offset-7 col-md-4">
-
-								<h2>Easy to customize &amp; <br class="visible-lg-block"> a pleasure to work with</h2>
-
-								<br>
-
-								<p><strong>Aenean luctus mi mollis quam feugiat consequat eu sed eros. Cras suscipit eu est
-								sed imperdiet. Curabitur ultrices dolor magna, at venenatis lacus rutrum nec. Quisque elit
-								velit, lacinia sit amet tellus at, auctor suscipit metus. Duis congue nibh at tortor ornare,
-								sed commodo ipsum mattis. Phasellus lacinia sed purus eget rhoncus. </strong></p>
-
-								<br>
-
-								<h6 class="text-uppercase"><strong>&quot;Simply great&quot;</strong></h6>
-
-								<blockquote>
-
-									<p>&quot;Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. lobortis dolor. Cras placerat lectus a posuere aliq uet. Curabitur quis vehicula.&quot;</p>
-
-									<footer>
-										<img src="{{ asset('frontend/images/testimonials/image-1.jpg') }}" alt="">
-										<em>Mark Ronson, Creatika</em>
-									</footer>
-								</blockquote>
-
-							</div><!-- col -->
-						</div><!-- row -->
-					</div><!-- container-fluid -->
-
-				</div><!-- full-section-container -->
-			</section><!-- full-section -->
-
-			<section class="full-section dark-section parallax" id="section-5" data-stellar-background-ratio="0.1">
-				<div class="full-section-container">
-
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-12">
-
-								<h3 class="text-center">Subscribe to our newsletter to get the latest trends &amp; news</h3>
-								<h5 class="text-center">Join our database NOW!</h5>
-
-							</div><!-- col -->
-						</div><!-- row -->
-					</div><!-- container -->
-
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-12">
-
-								<div class="widget widget-newsletter">
-
-									<form name="newsletter" novalidate method="post" action="#">
-										<fieldset>
-											<div class="row">
-												<div class="col-sm-3">
-
-													<input type="text" name="name" placeholder="Name">
-
-												</div><!-- col -->
-												<div class="col-sm-6">
-
-													<input type="text" name="email" placeholder="Your e-mail">
-
-												</div><!-- col -->
-												<div class="col-sm-3">
-
-													<button class="btn btn-default-1 waves" type="submit" name="submit" value="">Subscribe <i class="fa fa-angle-right"></i></button>
-
-												</div><!-- col -->
-											</div><!-- row -->
-										</fieldset>
-									</form>
-
-								</div><!-- widget-newsletter -->
-
-							</div><!-- col -->
-						</div><!-- row -->
-					</div><!-- container -->
-
-				</div><!-- full-section-container -->
-			</section><!-- full-section -->
-
-			<br><br><br>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-
-						<div class="headline text-center">
-
-							<h2>What else is new?</h2>
-							<p>A unique layout composed of 30 different homepages</p>
-
-						</div><!-- headline -->
-
-					</div><!-- col -->
-				</div><!-- row -->
-			</div><!-- container -->
-
-			<div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-
-                        <div class="blog-article latest">
-
-							<div class="blog-article-thumbnail">
-
-								<a href="blog-post-right-sidebar.html"><img src="{{ asset('frontend/images/blog/image-1.jpg') }}" alt=""></a>
-
-							</div><!-- blog-article-thumbnail -->
-
-							<h6 class="blog-article-subtitle"><a href="#">Lifestyle &amp; Travel</a></h6>
-
-							<h4 class="blog-article-title"><a href="blog-post-right-sidebar.html">The true story about how our company started</a></h4>
-
-							<div class="blog-article-content">
-
-								<p>Tempor massa et laoreet malesuada. Pellentesque sit amet elementum leo. Vivamus
-								massa.Tempor massa et laoreet malesuada. Pellentesque sit...</p>
-
-							</div><!-- blog-article-content -->
-
-						</div><!-- blog-article -->
-
-                    </div><!-- col -->
-					<div class="col-sm-4">
-
-                        <div class="blog-article latest">
-
-							<div class="blog-article-thumbnail">
-
-								<a href="blog-post-right-sidebar.html"><img src="{{ asset('frontend/images/blog/image-2.jpg') }}" alt=""></a>
-
-							</div><!-- blog-article-thumbnail -->
-
-							<h6 class="blog-article-subtitle"><a href="#">Tips &amp; tricks</a></h6>
-
-							<h4 class="blog-article-title"><a href="blog-post-right-sidebar.html">5 ways to get rid of your <br class="visible-lg-block"> headeach</a></h4>
-
-							<div class="blog-article-content">
-
-								<p>Laoreet malesuada. Pellentesque sit amet elementum leo. Vivamus augue. Tempor massa et
-								laoreet malesu ada. Pellentesque sit amet elementum...</p>
-
-							</div><!-- blog-article-content -->
-
-						</div><!-- blog-article -->
-
-                    </div><!-- col -->
-					<div class="col-sm-4">
-
-                        <div class="blog-article latest">
-
-							<div class="blog-article-thumbnail">
-
-								<a href="blog-post-right-sidebar.html"><img src="{{ asset('frontend/images/blog/image-3.jpg') }}" alt=""></a>
-
-							</div><!-- blog-article-thumbnail -->
-
-							<h6 class="blog-article-subtitle"><a href="#">Lifestyle &amp; Travel</a></h6>
-
-							<h4 class="blog-article-title"><a href="blog-post-right-sidebar.html">How to get started in a social media business</a></h4>
-
-							<div class="blog-article-content">
-
-								<p>Pellentesque sit amet elementum leo. Vivamus augue massa.Tempor massa et laoreet
-								malesuada. Pellentesque elementum leo. Vivamus augue...</p>
-
-							</div><!-- blog-article-content -->
-
-						</div><!-- blog-article -->
-
-                    </div><!-- col -->
-                </div><!-- row -->
-            </div><!-- container -->
-
-		</div><!-- PAGE CONTENT -->
-
-	<!-- SCROLL UP -->
-	<a id="scroll-up" class="waves"><i class="fa fa-angle-up"></i></a>
-
-
-	<!-- THEME OPTIONS -->
-	<div id="theme-options"></div>
-
-
-	@include('frontend._footer')
+@include('frontend._footer')
