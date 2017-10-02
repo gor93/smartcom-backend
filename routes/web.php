@@ -18,3 +18,10 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('frontend/index');
 });
+
+
+Route::prefix('admin')->group(function () {
+    Route::get('/', function () {
+        return view('admin/index');
+    });
+});
